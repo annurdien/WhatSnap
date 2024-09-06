@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		A754977E2C8A941B00267578 /* whatsnapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754977D2C8A941B00267578 /* whatsnapApp.swift */; };
-		A75497802C8A941B00267578 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754977F2C8A941B00267578 /* ContentView.swift */; };
 		A75497822C8A941C00267578 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A75497812C8A941C00267578 /* Assets.xcassets */; };
 		A75497852C8A941C00267578 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A75497842C8A941C00267578 /* Preview Assets.xcassets */; };
+		A75497922C8A94B100267578 /* WhatsappScannerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75497912C8A94B100267578 /* WhatsappScannerScreen.swift */; };
+		A77073452C8AED1C00D3B311 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77073442C8AED1C00D3B311 /* CameraView.swift */; };
+		A77073472C8AF03B00D3B311 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77073462C8AF03B00D3B311 /* String+Extension.swift */; };
+		A770734A2C8AF8B900D3B311 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77073492C8AF8B900D3B311 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A754977A2C8A941B00267578 /* whatsnap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whatsnap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A754977A2C8A941B00267578 /* WhatSnap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatSnap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A754977D2C8A941B00267578 /* whatsnapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatsnapApp.swift; sourceTree = "<group>"; };
-		A754977F2C8A941B00267578 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A75497812C8A941C00267578 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A75497842C8A941C00267578 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A75497912C8A94B100267578 /* WhatsappScannerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsappScannerScreen.swift; sourceTree = "<group>"; };
+		A77073442C8AED1C00D3B311 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		A77073462C8AF03B00D3B311 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		A77073492C8AF8B900D3B311 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +41,7 @@
 		A75497712C8A941B00267578 = {
 			isa = PBXGroup;
 			children = (
-				A754977C2C8A941B00267578 /* whatsnap */,
+				A754977C2C8A941B00267578 /* WhatSnap */,
 				A754977B2C8A941B00267578 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +49,23 @@
 		A754977B2C8A941B00267578 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A754977A2C8A941B00267578 /* whatsnap.app */,
+				A754977A2C8A941B00267578 /* WhatSnap.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A754977C2C8A941B00267578 /* whatsnap */ = {
+		A754977C2C8A941B00267578 /* WhatSnap */ = {
 			isa = PBXGroup;
 			children = (
+				A77073482C8AF8AB00D3B311 /* Data */,
+				A754978F2C8A944600267578 /* Helpers */,
+				A754978C2C8A943000267578 /* Views */,
+				A754978B2C8A942B00267578 /* Screens */,
 				A754977D2C8A941B00267578 /* whatsnapApp.swift */,
-				A754977F2C8A941B00267578 /* ContentView.swift */,
 				A75497812C8A941C00267578 /* Assets.xcassets */,
 				A75497832C8A941C00267578 /* Preview Content */,
 			);
-			path = whatsnap;
+			path = WhatSnap;
 			sourceTree = "<group>";
 		};
 		A75497832C8A941C00267578 /* Preview Content */ = {
@@ -67,12 +76,52 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A754978B2C8A942B00267578 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A75497912C8A94B100267578 /* WhatsappScannerScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		A754978C2C8A943000267578 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A77073442C8AED1C00D3B311 /* CameraView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A754978F2C8A944600267578 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A75497902C8A944C00267578 /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A75497902C8A944C00267578 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A77073462C8AF03B00D3B311 /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A77073482C8AF8AB00D3B311 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A77073492C8AF8B900D3B311 /* Constant.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A75497792C8A941B00267578 /* whatsnap */ = {
+		A75497792C8A941B00267578 /* WhatSnap */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A75497882C8A941C00267578 /* Build configuration list for PBXNativeTarget "whatsnap" */;
+			buildConfigurationList = A75497882C8A941C00267578 /* Build configuration list for PBXNativeTarget "WhatSnap" */;
 			buildPhases = (
 				A75497762C8A941B00267578 /* Sources */,
 				A75497772C8A941B00267578 /* Frameworks */,
@@ -82,9 +131,9 @@
 			);
 			dependencies = (
 			);
-			name = whatsnap;
+			name = WhatSnap;
 			productName = whatsnap;
-			productReference = A754977A2C8A941B00267578 /* whatsnap.app */;
+			productReference = A754977A2C8A941B00267578 /* WhatSnap.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +151,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A75497752C8A941B00267578 /* Build configuration list for PBXProject "whatsnap" */;
+			buildConfigurationList = A75497752C8A941B00267578 /* Build configuration list for PBXProject "WhatSnap" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +164,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A75497792C8A941B00267578 /* whatsnap */,
+				A75497792C8A941B00267578 /* WhatSnap */,
 			);
 		};
 /* End PBXProject section */
@@ -137,8 +186,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A75497802C8A941B00267578 /* ContentView.swift in Sources */,
+				A77073452C8AED1C00D3B311 /* CameraView.swift in Sources */,
+				A75497922C8A94B100267578 /* WhatsappScannerScreen.swift in Sources */,
+				A77073472C8AF03B00D3B311 /* String+Extension.swift in Sources */,
 				A754977E2C8A941B00267578 /* whatsnapApp.swift in Sources */,
+				A770734A2C8AF8B900D3B311 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,21 +327,29 @@
 				DEVELOPMENT_TEAM = 7YWWN4M3Y9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WhatSnap;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tbg.whatsnap;
+				PRODUCT_BUNDLE_IDENTIFIER = bar.alja.whatsnap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,28 +364,36 @@
 				DEVELOPMENT_TEAM = 7YWWN4M3Y9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WhatSnap;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tbg.whatsnap;
+				PRODUCT_BUNDLE_IDENTIFIER = bar.alja.whatsnap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A75497752C8A941B00267578 /* Build configuration list for PBXProject "whatsnap" */ = {
+		A75497752C8A941B00267578 /* Build configuration list for PBXProject "WhatSnap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A75497862C8A941C00267578 /* Debug */,
@@ -334,7 +402,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A75497882C8A941C00267578 /* Build configuration list for PBXNativeTarget "whatsnap" */ = {
+		A75497882C8A941C00267578 /* Build configuration list for PBXNativeTarget "WhatSnap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A75497892C8A941C00267578 /* Debug */,

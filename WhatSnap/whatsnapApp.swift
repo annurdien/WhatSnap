@@ -11,7 +11,7 @@ import SwiftUI
 struct whatsnapApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WhatsappScannerScreen()
         }
     }
 }

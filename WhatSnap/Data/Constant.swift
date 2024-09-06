@@ -24,5 +24,5 @@ class Constant {
 
 class AppText {
     static let selectCountry = "Select Country"
-    static let whatSnap = "WhatSnap"
+    static let whatSnap = "WhatsSnap"
 }

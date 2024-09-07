@@ -11,6 +11,7 @@
 		A75497822C8A941C00267578 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A75497812C8A941C00267578 /* Assets.xcassets */; };
 		A75497852C8A941C00267578 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A75497842C8A941C00267578 /* Preview Assets.xcassets */; };
 		A75497922C8A94B100267578 /* WhatsappScannerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75497912C8A94B100267578 /* WhatsappScannerScreen.swift */; };
+		A76733912C8BFCB5001DFF2C /* DrawSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76733902C8BFCB5001DFF2C /* DrawSquare.swift */; };
 		A77073452C8AED1C00D3B311 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77073442C8AED1C00D3B311 /* CameraView.swift */; };
 		A77073472C8AF03B00D3B311 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77073462C8AF03B00D3B311 /* String+Extension.swift */; };
 		A770734A2C8AF8B900D3B311 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77073492C8AF8B900D3B311 /* Constant.swift */; };
@@ -22,6 +23,7 @@
 		A75497812C8A941C00267578 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A75497842C8A941C00267578 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A75497912C8A94B100267578 /* WhatsappScannerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsappScannerScreen.swift; sourceTree = "<group>"; };
+		A76733902C8BFCB5001DFF2C /* DrawSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawSquare.swift; sourceTree = "<group>"; };
 		A77073442C8AED1C00D3B311 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		A77073462C8AF03B00D3B311 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		A77073492C8AF8B900D3B311 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		A754978F2C8A944600267578 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				A767338F2C8BFCA7001DFF2C /* Drawer */,
 				A75497902C8A944C00267578 /* Extensions */,
 			);
 			path = Helpers;
@@ -106,6 +109,14 @@
 				A77073462C8AF03B00D3B311 /* String+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A767338F2C8BFCA7001DFF2C /* Drawer */ = {
+			isa = PBXGroup;
+			children = (
+				A76733902C8BFCB5001DFF2C /* DrawSquare.swift */,
+			);
+			path = Drawer;
 			sourceTree = "<group>";
 		};
 		A77073482C8AF8AB00D3B311 /* Data */ = {
@@ -186,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76733912C8BFCB5001DFF2C /* DrawSquare.swift in Sources */,
 				A77073452C8AED1C00D3B311 /* CameraView.swift in Sources */,
 				A75497922C8A94B100267578 /* WhatsappScannerScreen.swift in Sources */,
 				A77073472C8AF03B00D3B311 /* String+Extension.swift in Sources */,

@@ -13,7 +13,7 @@ extension String {
 
         // If the number starts with "+" (already in international format), return it as is.
         if self.first == "+" {
-            return self
+            return cleanedPhoneNumber
         }
         
         // If the number starts with "0", replace it with the desired country code, e.g., +62
@@ -26,7 +26,7 @@ extension String {
     }
     
     func isValidPhoneNumber() -> Bool {
-        let phoneRegex = "^[+]?[0-9]{6,15}$"
+        let phoneRegex = "^[+]?\\d{1,3}?[-.\\s]?\\(?\\d{1,4}?\\)?[-.\\s]?\\d{1,4}[-.\\s]?\\d{1,4}[-.\\s]?\\d{1,9}$"
         let phoneTest = NSPredicate(format: "SELF MATCHES %@", phoneRegex)
         return phoneTest.evaluate(with: self)
     }
